@@ -1,0 +1,8 @@
+body {
+  background-image: linear-gradient(135deg, #7c96ff 5%, #123597 90%);
+}
+
+.num:hover {
+  background: rgb(133, 133, 133);
+  color: aliceblue;
+}
