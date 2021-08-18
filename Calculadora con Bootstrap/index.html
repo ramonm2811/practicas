@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Calculadora con Bootstrap</title>
+</head>
+
+<body class="d-flex align-items-center" style="height:100vh">
+    <div class="container w-25 bg-light rounded border border-dark border-3 shadow-lg p-3 bg-light rounded">
+        <form name="calc">
+            <div class="row">
+                <input type="text" class="value text-end fs-1 rounded border-0" name="txt" readonly=""
+                    style="height:100px">
+            </div>
+            <div class="row row-cols-4">
+                <div class="num col text-center fs-3 py-2 border bg-warning" onClick="document.calc.txt.value +=''">C
+                </div>
+                <div class="num col text-center fs-3 py-2 border " onClick="document.calc.txt.value +='/'">/
+                </div>
+                <div class="num col text-center fs-3 py-2 border " onClick="document.calc.txt.value +='*'">X
+                </div>
+                <div class="num col text-center fs-3 py-2 border " onClick="document.calc.txt.value +='-'">-
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-9">
+                    <div class="row row-cols-3">
+                        <div class="num col text-center fs-3 py-2 border" onClick="document.calc.txt.value +='7'">7
+                        </div>
+                        <div class="num col text-center fs-3 py-2 border" onClick="document.calc.txt.value +='8'">8
+                        </div>
+                        <div class="num col text-center fs-3 py-2 border" onClick="document.calc.txt.value +='9'">9
+                        </div>
+                        <div class="num col text-center fs-3 py-2 border" onClick="document.calc.txt.value +='4'">4
+                        </div>
+                        <div class="num col text-center fs-3 py-2 border" onClick="document.calc.txt.value +='5'">5
+                        </div>
+                        <div class="num col text-center fs-3 py-2 border" onClick="document.calc.txt.value +='6'">6
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3 p-0">
+                    <div class="num d-flex justify-content-center align-item-center fs-3 border" style="height:100%;"
+                        onClick=" document.calc.txt.value +='+'">
+                        <span class="my-auto">+</span>
+                    </div>
+                </div>
+            </div>
+            <div class=" row">
+                <div class="col-9">
+                    <div class="row row-cols-3">
+                        <div class="num col text-center fs-3 py-2 border" onClick="document.calc.txt.value +='1'">1
+                        </div>
+                        <div class="num col text-center fs-3 py-2 border" onClick="document.calc.txt.value +='2'">2
+                        </div>
+                        <div class="num col text-center fs-3 py-2 border" onClick="document.calc.txt.value +='3'">3
+                        </div>
+                        <div class="num col-8 text-center fs-3 py-2 border" onClick="document.calc.txt.value +='0'">0
+                        </div>
+                        <div class="num col text-center fs-3 py-2 border" onClick="document.calc.txt.value +='.'">.
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3 p-0">
+                    <div class="num fs-3 d-flex align-item-center justify-content-center border" style="height:100%;"
+                        onClick="document.calc.txt.value = eval(calc.txt.value)"><span class="my-auto">=</span>
+                    </div>
+                </div>
+            </div>
+
+
+        </form>
+
+        <!---<div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label">Email address</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+              <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputPassword1" class="form-label">Password</label>
+              <input type="password" class="form-control" id="exampleInputPassword1">
+            </div>
+            <div class="mb-3 form-check">
+              <input type="checkbox" class="form-check-input" id="exampleCheck1">
+              <label class="form-check-label" for="exampleCheck1">Check me out</label>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>-->
+    </div>
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
